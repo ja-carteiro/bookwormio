@@ -124,7 +124,7 @@ const createScene = function () {
     button1.background = 'pink';
     button1.onPointerUpObservable.add(function() {
         GetAPI(input.text);
-        waitForFrames(scene, 200, () => {
+        waitForFrames(scene, 300, () => {
             try { 
                 screen.text = screen.text + "\n" + dataExtracted.title + "\n";
             } catch(erro) {
